@@ -125,6 +125,19 @@ body {
   color: var(--accent-color);
 }
 
+.icon-envelope:hover,
+.icon-envelope:focus {
+  fill: var(--accent-color);
+}
+.icon-phone:hover,
+.icon-phone:focus {
+  fill: var(--accent-color);
+}
+.icon-envelope,
+.icon-phone {
+  margin-right: 10px;
+}
+
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -141,11 +154,29 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
+  display: flex;
+  align-items: center;
+}
+.contacts-link-foot {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+.contacts-link-foot:hover,
+.contacts-link-foot:focus {
+  color: var(--accent-color);
 }
 
 .contacts-link {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.contacts-link-foot {
+  display: block;
 }
 
 /* ***Блок-герой*** */
@@ -261,6 +292,7 @@ body {
 .social-list-icon {
   width: 20px;
   height: 20px;
+  color: currentColor;
 }
 .social-link {
   display: flex;
@@ -270,6 +302,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
+  fill: #757575;
 }
 .social-link:hover,
 .social-link:focus {
@@ -300,6 +333,60 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.section-clients {
+  background: #ffffff;
+}
+
+.clients-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--primary-texr-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  list-style-type: none;
+}
+
+.clients-item {
+  flex-basis: calc((100% - 6 * 30px) / 6);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:hover .icon-logo,
+.clients-link:focus .icon-logo {
+  fill: var(--accent-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.icon-logo {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
 }
 
 /* Вutton  */
@@ -374,6 +461,29 @@ body {
 .mail:not(:last-child) {
   margin-bottom: 9px;
 }
+.social-footer {
+  list-style-type: none;
+}
+.socical-footer-icon {
+  width: 20px;
+  height: 20px;
+}
+.socical-footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-footer {
+  display: flex;
+}
+.social-corner {
+  margin-left: 70px;
+}
+
 /* Портфолио */
 /* Навигация страницы портфолио */
 .header-nav {
