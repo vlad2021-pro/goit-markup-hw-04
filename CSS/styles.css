@@ -136,6 +136,7 @@ body {
 .icon-envelope,
 .icon-phone {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .contacts-item:not(:last-child) {
@@ -257,6 +258,16 @@ body {
 .advantages:last-child {
   margin-right: 0px;
 }
+
+.advantages-icon {
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
 /* Team-list */
 
 .team {
@@ -292,7 +303,7 @@ body {
 .social-list-icon {
   width: 20px;
   height: 20px;
-  color: currentColor;
+  fill: currentColor;
 }
 .social-link {
   display: flex;
@@ -302,11 +313,11 @@ body {
   background: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
-  fill: #757575;
+  color: #afb1b8;
 }
 .social-link:hover,
 .social-link:focus {
-  fill: var(--white-color);
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 
@@ -340,6 +351,7 @@ body {
 }
 
 .clients-title {
+  padding-top: 94px;
   text-align: center;
   margin-bottom: 50px;
   color: var(--primary-texr-color);
@@ -477,11 +489,11 @@ body {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
+  fill: var(--white-color);
 }
 
 .socical-footer-link:hover,
 .socical-footer-link:focus {
-  fill: var(--white-color);
   background-color: var(--accent-color);
 }
 
@@ -502,7 +514,6 @@ body {
   color: #ffffff;
 
   margin-bottom: 20px;
-  padding-top: 12px;
 }
 
 /* Портфолио */
@@ -554,6 +565,16 @@ body {
   margin-top: 30px;
   margin-left: 30px;
 }
+
+.examples-box:hover,
+.examples-box:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.type-link {
+  text-decoration: none;
+}
+
 .type-cover {
   padding-left: 24px;
   padding-right: 24px;
@@ -602,7 +623,6 @@ body {
   cursor: pointer;
   border-radius: 4px;
   border-color: transparent;
-  outline: none;
 }
 .button-current {
   padding: 6px 22px;
@@ -617,7 +637,13 @@ body {
 .btm-portfolio:not(:last-child) {
   margin-right: 8px;
 }
-.button-portfolio .button-current:hover {
+.button-portfolio:focus,
+.button-current:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+.button-current:focus,
+.button-current:hover {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
