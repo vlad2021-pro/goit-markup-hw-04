@@ -294,6 +294,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 10px;
 }
 .social-list {
   list-style-type: none;
@@ -330,7 +331,6 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  margin-top: 10px;
   margin-bottom: 16px;
 }
 
@@ -351,14 +351,16 @@ body {
 }
 
 .clients-title {
-  padding-top: 94px;
   text-align: center;
-  margin-bottom: 50px;
   color: var(--primary-texr-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  margin-bottom: 50px;
   text-align: center;
+}
+.section-clients {
+  margin-top: 94px;
 }
 
 .clients-list {
@@ -415,6 +417,7 @@ body {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  border-color: transparent;
 }
 /* Footer */
 .footer {
@@ -566,13 +569,14 @@ body {
   margin-left: 30px;
 }
 
-.examples-box:hover,
-.examples-box:focus {
+.type-link:hover,
+.type-link:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .type-link {
   text-decoration: none;
+  display: block;
 }
 
 .type-cover {
@@ -638,9 +642,12 @@ body {
   margin-right: 8px;
 }
 .button-portfolio:focus,
-.button-current:hover {
+.button-current:hover,
+.button-current:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-current:focus,
 .button-current:hover {
