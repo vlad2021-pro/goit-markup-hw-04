@@ -360,7 +360,8 @@ body {
   text-align: center;
 }
 .section-clients {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .clients-list {
